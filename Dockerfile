@@ -6,8 +6,8 @@ ENV JAVA_HOME=/usr/local/java \
     JAVA_VERSION_MAJOR=8 \
     JAVA_VERSION_MINOR=152 \
     JAVA_VERSION_BUILD=16 \
-    JAVA_PACKAGE=server-jre \
-    CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH \
+    JAVA_PACKAGE=server-jre
+ENV CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH \
     PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 
 RUN apt-get update && \
